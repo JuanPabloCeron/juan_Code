@@ -28,17 +28,13 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 public class SecurityConfig {
 
-    //Es para poder filtrar dentro del token
+
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
-    // Es para usar sus metodos
     private final UserServiceImpl userService;
 
-    //Nos ayudara a codificar y decodificar las contraseñas para poder almacenarlas en la BD
     private final PasswordEncoder passwordEncoder;
 
-
-    //Este Bean nos ayudara a utentificar los usuarios (Authentication Provider)
     @Bean
     public AuthenticationProvider authenticationProvider(){
 
@@ -50,17 +46,15 @@ public class SecurityConfig {
         return authProvider;
     }
 
-    //Devuelve la configuracion actual
     @Bean
     public AuthenticationManager authenticationManager (AuthenticationConfiguration config) throws Exception{
         return config.getAuthenticationManager();
     }
 
-//********
     @Bean
     public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception{
         http
-                .csrf(AbstractHttpConfigurer::disable) //Dehabilitar las llamada crusadas
+                .csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) //manejo de las seciones
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST, "/login","/signup").permitAll()

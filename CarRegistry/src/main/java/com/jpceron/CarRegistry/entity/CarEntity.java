@@ -23,8 +23,6 @@ public class CarEntity {
     @JoinColumn(name = "idbrand")
     private BrandEntity brand;
 
-
-
     private String model;
 
 

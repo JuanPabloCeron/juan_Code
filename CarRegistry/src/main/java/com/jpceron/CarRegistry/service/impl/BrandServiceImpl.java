@@ -1,9 +1,6 @@
 package com.jpceron.CarRegistry.service.impl;
-
 import com.jpceron.CarRegistry.domain.Brand;
-import com.jpceron.CarRegistry.domain.Car;
 import com.jpceron.CarRegistry.entity.BrandEntity;
-import com.jpceron.CarRegistry.entity.CarEntity;
 import com.jpceron.CarRegistry.repository.BrandRepository;
 import com.jpceron.CarRegistry.service.BrandService;
 import com.jpceron.CarRegistry.service.converters.BrandConverter;
@@ -26,7 +23,6 @@ public class BrandServiceImpl implements BrandService {
 
     BrandConverter brandConverter = new BrandConverter();
 
-
    @Override
     public Brand saveBrand(Brand brandRequest){
 
@@ -34,7 +30,7 @@ public class BrandServiceImpl implements BrandService {
         BrandEntity entity = brandConverter.toEntity(brandRequest);
 
         return brandConverter.toBrand(brandRepository.save(entity));
-    };
+    }
 
     @Override
     public Brand getBrandById(int id) {
@@ -73,8 +69,6 @@ public class BrandServiceImpl implements BrandService {
 
     }
 
-
-//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
     @Async
     @Override

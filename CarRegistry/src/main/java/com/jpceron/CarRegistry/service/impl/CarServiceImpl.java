@@ -1,8 +1,5 @@
 package com.jpceron.CarRegistry.service.impl;
-
-
 import com.jpceron.CarRegistry.domain.Car;
-import com.jpceron.CarRegistry.entity.BrandEntity;
 import com.jpceron.CarRegistry.entity.CarEntity;
 import com.jpceron.CarRegistry.repository.BrandRepository;
 import com.jpceron.CarRegistry.repository.CarRepository;
@@ -17,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -40,12 +36,6 @@ public class CarServiceImpl implements CarService {
     private CarConverter carConverter = new CarConverter();
 
     private final String[] HEADERS = {"id","model","colour","year"};
-
-
-
-
-
-
 
     @Override
     public Car getCarById(int id) {
@@ -131,8 +121,6 @@ public class CarServiceImpl implements CarService {
                     .append(car.getModel()).append(",")
                     .append(car.getColour()).append(",")
                     .append(car.getYear()).append("\n");
-
-
         }
 
         return csvContent.toString();
@@ -162,11 +150,8 @@ public class CarServiceImpl implements CarService {
                 car.setBrand(brandRepository.findByName(getName("brand")));
 
                 carList.add(car);
-
-
             }
 
-            // Ahora guardamos la lista completa
             carList = carRepository.saveAll(carList);
 
         } catch (Exception e) {

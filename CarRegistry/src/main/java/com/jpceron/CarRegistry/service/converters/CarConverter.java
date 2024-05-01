@@ -15,7 +15,7 @@ public class CarConverter {
 
         Car car = new Car();
         car.setId(carEntity.getId());
-        car.setBrand(brandConverter.toBrand(carEntity.getBrand()));//obtenemos la referencia del id ddel brand
+        car.setBrand(brandConverter.toBrand(carEntity.getBrand()));
         car.setModel(carEntity.getModel());
         car.setYear(carEntity.getYear());
         car.setColour(carEntity.getColour());
@@ -29,7 +29,7 @@ public class CarConverter {
 
         CarEntity carEntity = new CarEntity();
         carEntity.setId(car.getId());
-        carEntity.setBrand(brandConverter.toEntity(car.getBrand()));//obtenemos la referencia del id ddel brand
+        carEntity.setBrand(brandConverter.toEntity(car.getBrand()));
         carEntity.setModel(car.getModel());
         carEntity.setYear(car.getYear());
         carEntity.setColour(car.getColour());

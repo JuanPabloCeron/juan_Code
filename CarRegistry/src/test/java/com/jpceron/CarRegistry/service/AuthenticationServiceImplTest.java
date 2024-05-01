@@ -3,6 +3,7 @@ package com.jpceron.CarRegistry.service;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+
 import com.jpceron.CarRegistry.controller.dtos.JwtResponse;
 import com.jpceron.CarRegistry.controller.dtos.LoginRequest;
 import com.jpceron.CarRegistry.entity.UserEntity;

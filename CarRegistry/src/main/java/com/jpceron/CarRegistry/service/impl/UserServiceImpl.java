@@ -4,14 +4,12 @@ import com.jpceron.CarRegistry.entity.UserEntity;
 import com.jpceron.CarRegistry.repository.UserRepository;
 import com.jpceron.CarRegistry.service.UserService;
 import lombok.RequiredArgsConstructor;
-
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.util.Base64;
 @Slf4j

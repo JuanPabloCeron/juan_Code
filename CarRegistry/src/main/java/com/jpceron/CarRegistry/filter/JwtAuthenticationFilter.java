@@ -1,5 +1,4 @@
 package com.jpceron.CarRegistry.filter;
-
 import com.jpceron.CarRegistry.service.impl.JwtService;
 import com.jpceron.CarRegistry.service.impl.UserServiceImpl;
 import jakarta.servlet.FilterChain;
@@ -16,9 +15,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
-
 import java.io.IOException;
-
 
 @Component
 @Slf4j
@@ -27,8 +24,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private  final JwtService jwtService;
     private final UserServiceImpl userService;
-
-
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,

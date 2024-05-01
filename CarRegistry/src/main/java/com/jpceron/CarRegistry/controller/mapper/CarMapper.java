@@ -1,5 +1,4 @@
 package com.jpceron.CarRegistry.controller.mapper;
-
 import com.jpceron.CarRegistry.controller.dtos.CarRequest;
 import com.jpceron.CarRegistry.controller.dtos.CarResponse;
 import com.jpceron.CarRegistry.domain.Car;
@@ -17,7 +16,7 @@ public class CarMapper {
         CarResponse car = new CarResponse();
 
         car.setId(carEntity.getId());
-        car.setBrand(brandMapper.toResponse(carEntity.getBrand()));//obtenemos la referencia del id ddel brand
+        car.setBrand(brandMapper.toResponse(carEntity.getBrand()));
         car.setModel(carEntity.getModel());
         car.setYear(carEntity.getYear());
         car.setColour(carEntity.getColour());
@@ -35,7 +34,7 @@ public class CarMapper {
         Car car = new Car();
 
         car.setId(model.getId());
-        car.setBrand(brandMapper.toBrandModel(model.getBrandRequest()));//obtenemos la referencia del id ddel brand
+        car.setBrand(brandMapper.toBrandModel(model.getBrandRequest()));
         car.setModel(model.getModel());
         car.setYear(model.getYear());
         car.setColour(model.getColour());
@@ -45,8 +44,4 @@ public class CarMapper {
 
         return car;
     }
-
-
-
-
 }

@@ -26,7 +26,7 @@ public class UserEntity implements UserDetails {
 
     String surname;
 
-    @Column(unique = true) // es para que dos usuarios no tengan el mismo email, ya que se usara para la autenticacion
+    @Column(unique = true)
     String email;
 
     String password;
@@ -36,39 +36,32 @@ public class UserEntity implements UserDetails {
     String role;
 
     //----------------------------------------------------------------------------
-    // Al implementar la Clase UserDetail nos permite acceder a los siguientes metodos
 
-    //Nos  devuelve una lista de roles que tenga activos
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role));
     }
 
-    // Nos da el nombre del usuario
     @Override
     public String getUsername() {
         return email;
     }
 
-    //Nos informa si la cuenta esta caducada o no
     @Override
     public boolean isAccountNonExpired() {
         return Boolean.TRUE;
     }
 
-    //Nos infoma si esta bloqueada o no
     @Override
     public boolean isAccountNonLocked() {
         return Boolean.TRUE;
     }
 
-    // Nos informa si las credenciales han caducado
     @Override
     public boolean isCredentialsNonExpired() {
         return Boolean.TRUE;
     }
 
-    //Nos infoma si esta activo el usuario
     @Override
     public boolean isEnabled() {
         return Boolean.TRUE;

@@ -36,7 +36,6 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
 
-
     }
 
     @PostMapping("/login")
@@ -60,7 +59,6 @@ public class UserController {
         }
     }
 
-    //Devolvemos la imagen de la base de datos
     @GetMapping(value = "/userImage/{id}")
     public ResponseEntity <byte[]> getImage(@PathVariable Long id){
         try{
@@ -74,6 +72,5 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
     }
-
 
 }
