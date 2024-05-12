@@ -5,6 +5,7 @@ import com.juanCode.ProductManagement.entity.ProductEntity;
 import com.juanCode.ProductManagement.repository.ProductRepository;
 import com.juanCode.ProductManagement.service.ProductService;
 import com.juanCode.ProductManagement.service.converters.ProductConverter;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
@@ -15,6 +16,7 @@ import java.util.concurrent.CompletableFuture;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
