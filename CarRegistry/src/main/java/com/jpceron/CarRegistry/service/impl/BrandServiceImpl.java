@@ -78,9 +78,7 @@ public class BrandServiceImpl implements BrandService {
 
         List<Brand> brands = new ArrayList<>();
 
-        brandList.forEach(brand ->{
-            brands.add(brandConverter.toBrand(brand));
-        });
+        brandList.forEach(brand -> brands.add(brandConverter.toBrand(brand)));
 
         return CompletableFuture.completedFuture(brands);
     }
