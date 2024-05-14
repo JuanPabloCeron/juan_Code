@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -103,4 +105,17 @@ public class ProductController {
       return new ResponseEntity<String>(e.getCause().toString(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }
+  //-----------------------------------------------------------------------------------------------------------
+    @PostMapping(value = "/uploadFile",consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public  ResponseEntity<String> uploadFile(@RequestParam(value = "file") MultipartFile file){
+
+        if(file.isEmpty()){
+            log.error("The file is empty");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
+
+        log.info("File it`s {}",file.getOriginalFilename());
+
+        return ResponseEntity.ok("File succesfull upload");
+    }
 }

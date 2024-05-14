@@ -29,7 +29,8 @@ public class SecurityConfig{
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers(HttpMethod.POST,"/auth/**").permitAll()
+                                .requestMatchers("/auth/**").permitAll()
+                                .requestMatchers(HttpMethod.GET,"/product/**").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .formLogin(Customizer.withDefaults())
