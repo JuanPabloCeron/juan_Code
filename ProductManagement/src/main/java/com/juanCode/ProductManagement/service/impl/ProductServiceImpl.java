@@ -6,10 +6,22 @@ import com.juanCode.ProductManagement.repository.ProductRepository;
 import com.juanCode.ProductManagement.service.ProductService;
 import com.juanCode.ProductManagement.service.converters.ProductConverter;
 import lombok.RequiredArgsConstructor;
+import lombok.Synchronized;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
@@ -23,6 +35,8 @@ public class ProductServiceImpl implements ProductService {
     ProductRepository productRepository;
 
     private ProductConverter productConverter = new ProductConverter();
+
+    private final String[] HEADERS = {"id","name","description","price","stock","brand"};
 
 
     @Override
@@ -95,7 +109,77 @@ public class ProductServiceImpl implements ProductService {
         return null;
     }
 
+    @Override
+    public void addProductImage(int id, MultipartFile imageFile) throws IOException {
+        ProductEntity entity = productRepository.findById(id).orElseThrow(RuntimeException :: new);
+        log.info("Saving product image... ");
+    entity.setImage(Base64.getEncoder().encodeToString(imageFile.getBytes()));
+    productRepository.save(entity);
+    }
 
+    @Override
+    public byte[] getProductImage(int id) {
+        ProductEntity entity = productRepository.findById(id).orElseThrow(RuntimeException:: new);
+        return Base64.getDecoder().decode(entity.getImage());
+    }
+
+    @Override
+    public List<ProductEntity> uploadProducts(MultipartFile file) {
+
+        List<ProductEntity>productList = new ArrayList<>();
+
+    try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(file.getInputStream(),"UTF-8"));
+         CSVParser csvParser = new CSVParser(fileReader,
+                CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());) {
+
+
+        Iterable<CSVRecord> csvRecord = csvParser.getRecords();
+
+        for(CSVRecord record : csvRecord){
+            ProductEntity product = new ProductEntity();
+
+            product.setId(Integer.parseInt(record.get("id")));
+            product.setName(record.get("name"));
+            product.setDescription(record.get("description"));
+            product.setPrice(Double.parseDouble(record.get("price")));
+            product.setStock(Integer.parseInt(record.get("stock")));
+            product.setBrand(record.get("brand"));
+
+            productList.add(product);
+
+        }
+
+       productList = productRepository.saveAll(productList);
+
+    } catch (IOException e) {
+        log.error("Failed to load users");
+        throw new RuntimeException(e);
+    }
+
+    return productList;
+    }
+
+    @Override
+    public String productCsv() {
+
+        List<ProductEntity> productEntityList = productRepository.findAll();
+        StringBuilder csvContent = new StringBuilder();
+        csvContent.append(HEADERS);
+
+        for (ProductEntity product : productEntityList){
+
+            csvContent.append(product.getId()).append(",")
+                    .append(product.getName()).append(",")
+                    .append(product.getDescription()).append(",")
+                    .append(product.getPrice()).append(",")
+                    .append(product.getStock()).append(",")
+                    .append(product.getBrand()).append("\n");
+
+        }
+
+
+        return csvContent.toString();
+    }
 
 
 }

@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "922.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 2,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "747.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 3,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "99.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 4,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "381.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 5,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "489.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 6,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "120.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 7,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "964.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 8,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "994.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 9,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "880.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 10,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "935.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 11,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "379.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 12,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "190.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 13,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "205.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 14,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "55.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 15,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "170.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 16,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "808.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 17,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "814.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 18,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "101.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 19,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "885.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 20,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "896.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 21,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "323.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 22,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "746.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 23,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "889.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 24,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "885.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 25,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "143.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 26,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "588.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 27,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "78.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 28,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "201.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 29,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "417.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 30,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "468.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 31,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "385.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 32,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "243.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 33,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "668.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 34,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "524.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 35,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "484.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 36,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "962.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 37,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "582.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 38,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "553.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 39,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "782.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 40,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "733.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 41,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "350.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 42,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "587.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 43,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "588.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 44,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "451.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 45,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "318.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 46,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "850.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 47,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "619.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 48,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "636.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 49,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "866.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 50,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "401.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 51,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "580.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 52,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "548.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 53,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "684.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 54,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "893.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 55,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "280.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 56,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "816.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 57,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "921.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 58,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "440.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 59,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "931.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 60,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "888.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 61,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "269.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 62,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "580.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 63,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "64.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 64,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "637.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 65,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "577.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 66,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "712.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 67,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "438.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 68,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "445.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 69,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "673.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 70,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "207.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 71,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "590.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 72,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "486.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 73,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "556.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 74,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "873.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 75,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "752.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 76,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "956.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 77,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "348.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 78,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "487.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 79,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "529.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 80,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "59.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 81,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "469.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 82,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "117.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 83,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "95.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 84,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "877.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 85,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "316.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 86,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "677.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 87,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "591.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 88,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "367.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 89,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "881.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 90,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "364.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 91,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "725.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 92,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "501.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 93,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "729.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 94,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "129.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 95,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "732.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 96,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "275.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 97,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "240.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 98,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "678.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 99,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "897.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    },
+    {
+        "id": 100,
+        "name": "Smart Phone",
+        "description": "Gen 5",
+        "price": "78.00",
+        "stock": 25,
+        "brand": "Xiamomi"
+    }
+]

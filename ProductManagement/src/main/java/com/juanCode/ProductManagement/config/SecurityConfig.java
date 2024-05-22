@@ -30,7 +30,7 @@ public class SecurityConfig{
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
                                 .requestMatchers("/auth/**").permitAll()
-                                .requestMatchers(HttpMethod.GET,"/product/**").permitAll()
+                                .requestMatchers(HttpMethod.GET,"/product/products").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .formLogin(Customizer.withDefaults())

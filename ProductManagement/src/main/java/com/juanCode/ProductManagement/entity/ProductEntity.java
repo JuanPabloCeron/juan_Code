@@ -18,5 +18,7 @@ public class ProductEntity {
     private Double price;
     private int stock;
     private String brand;
+    private String image;
+
 
 }
