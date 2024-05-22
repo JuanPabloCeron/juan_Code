@@ -20,11 +20,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 
 @Slf4j
 @Service
@@ -164,8 +162,9 @@ public class ProductServiceImpl implements ProductService {
 
         List<ProductEntity> productEntityList = productRepository.findAll();
         StringBuilder csvContent = new StringBuilder();
-        csvContent.append(HEADERS);
-
+        Arrays.stream(HEADERS).forEach(header -> csvContent.append(header).append(","));
+        csvContent.setLength(csvContent.length() - 1); // Remove the last comma
+        csvContent.append("\n");
         for (ProductEntity product : productEntityList){
 
             csvContent.append(product.getId()).append(",")
